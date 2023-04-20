@@ -2,14 +2,15 @@ import React from "react";
 import Counter from "../Counter/Counter";
 import "./EmployeeCard.scss"
 
-const EmployeeCard = () => {
-    return( 
-    <div className="employee-card">
-        <h2>Name</h2>
-        <h2>Role</h2>
+
+const EmployeeCard = ({ name, role }) => {
+    return (
+      <div className="employee-card">
+        <h2>{name}</h2>
+        <p>{role}</p>
         <Counter />
-
-    </div>)
-}
-
-export default EmployeeCard
+      </div>
+    );
+  };
+  
+  export default EmployeeCard;
