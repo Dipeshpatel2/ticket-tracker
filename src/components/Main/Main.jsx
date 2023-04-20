@@ -10,6 +10,20 @@ import team from '../../assets/data/team'
 //   return 
 // })
 
+const TeamData = () => {
+  return (
+    <div>
+      {team.map(member => (
+        <div key={member.id}>
+          <p>ID: {member.id}</p>
+          <p>Name: {member.name}</p>
+          <p>Role: {member.role}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
 const Main = () => {
   return (
     <div className="main">
