@@ -1,0 +1,31 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  background-color: lightcyan;
+  height: 180px;
+
+  &__button-container {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+
+  &__button {
+    width: 40px;
+    height: 30px;
+    background-color: skyblue;
+    border: 2px solid blue;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+
+    &:hover {
+      background-color: royalblue;
+      color: gold;
+      transform: translatey(-2px);
+    }
+  }
+}
